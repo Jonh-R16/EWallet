@@ -4,45 +4,66 @@
  <title>gastos</title>
  <meta charset="utf-8" />
  <link rel="stylesheet" href="../css/gastos.css" />
- <script type="text/javascript" src="../js/validacion.js"></script>
- 
+ <script type="text/javascript"></script>
+   <link rel="stylesheet" href="../css/style-menu.css">
+
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+      <script  src="../js/menu.js"></script>
 </head>
 <body>
-    <p class="prim"><a href="menu.html" ><input type="submit"class="volver" value="Volver"></a>Gastos</p>
-    <br>
+<header>
+<nav id='cssmenu'>
+<div class="logo"><a>E-WALLET </a></div>
+<div id="head-mobile"></div>
+<div class="button"></div>
+<ul>
+<li class='active' ><a href='cuentas.html'>CUENTA</a></li>
+<li><a href='ingresos.html'>INGRESOS</a>
+</li>
+<li><a href='gastos.html'>GASTOS</a></li>
+<li><a href='construccion.html'>CONFIGURACIONES GENERALES</a></li>
+<li><a href='construccion.html'>ESTADISTICAS</a></li>
+</ul>
+</nav>
+</header>
 <div>
 <section>
- 
- <p>
- </p>
-    
+
  <form name="formu" id="formu">
+     <h1>Gastos</h1>
      
-<p id="t1">Fecha:</p><span class=""><i class=""></i></span>  
- <input type="text" name="txtcarnet" id="txtbanco" required="required"
+<p id="t1">FECHA:</p><span class=""><i class=""></i></span>  
+ <input type="text" name="txtcarnet" id="txt_banco" required="required"
  class="field" />     
      
- <p id="t1">Motivo:</p><span class=""><i class=""></i></span>  
- <input type="text" name="txtname" id="txtcuenta" required="required"
+ <p id="t1">MOTIVO:</p><span class=""><i class=""></i></span>  
+ <input type="text" name="txtname" id="txt_cuenta" required="required"
  class="field" />
   
      
- <p id="t1">Monto:</p><span class=""><i class=""></i></span>  
- <input type="text" name="txtlastname" id="txtactual"
+ <p id="t1">MONTO:</p><span class=""><i class=""></i></span>  
+ <input type="text" name="txtlastname" id="txt_actual"
 required="required" class="field" />
      
-<p id="t1">Cuenta con la que se cargo:</p>
-      
-     <input id="opc1" type="radio" name="transporte" value="2" /><p id="radio">Efectivo</p><br>
-<input id="opc2" type="radio" name="transporte" value="2"/><p id="radio">Cuenta de ahorro</p><br>
-<input id="opc3" type="radio" name="transporte" value="2"/><p id="radio">Tarjeta de credito</p><br>
+<p id="t1">CUENTA CON LA QUE SE CARGO:</p>
+    <select id="cuentacargo">
+        <option value="EFECTIVO" selected>EFECTIVO</option>
+        <option value="CUENTADA">CUENTA DE AHORRO</option>
+        <option value="TARJETADC">TARJETA DE CREDITO</option>
+    </select>  
+    <h1 id="txt_cuentain">HOLA</h1>
+    <br>
 
+     
+     <a href="menu.html" ><input type="button" name="btnSend" id="enviar_gasto" value="Salir" /></a>
  <input type="button" name="btnSend" id="enviar" value="Añadir" />
 
  </form>
-    <br><br><br><br>
+   
      
     </section>
     </div>
+    <script type="text/javascript" src="../js/gastos.js"></script>
     </body>
 </html>

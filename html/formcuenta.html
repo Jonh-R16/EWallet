@@ -4,42 +4,40 @@
  <title>formulario-cuentas</title>
  <meta charset="utf-8" />
  <link rel="stylesheet" href="../css/style-form.css" />
- <script type="text/javascript" src="../js/validacion.js"></script>
+ <script type="text/javascript" src="../js/cuentas.js"></script>
  
-</head>
-<body>
-    <p class="prim"><a href="menu.html" ><input type="submit"class="volver" value="Volver"></a>Ingrese los datos</p>
-    <br>
-<div>
-<section>
- 
- <p>
- </p>
-    
+    </head>
+    <body>   
+       
+          
+   
  <form name="formu" id="formu">
-     
-<p id="t1">Banco:</p><span class=""><i class=""></i></span>  
- <input type="text" name="txtcarnet" id="txtbanco" required="required"
+    <h1>Cuentas</h1>
+<div class="inset">
+
+<p id="t1">BANCO:</p><span class=""><i class=""></i></span>  
+ <input type="text" name="txtbanco" id="txtbanco" required="required"
  class="field" />     
      
- <p id="t1">N° de Cuenta:</p><span class=""><i class=""></i></span>  
- <input type="text" name="txtname" id="txtcuenta" required="required"
+ <p id="t1">N° DE CUENTA:</p><span class=""><i class=""></i></span>  
+ <input type="text" name="txtcuenta" id="txtcuenta" required="required"
  class="field" />
   
      
- <p id="t1">Saldo actual:</p><span class=""><i class=""></i></span>  
- <input type="text" name="txtlastname" id="txtactual"
+ <p id="t1">SALDO ACTUAL:</p><span class=""><i class=""></i></span>  
+ <input type="text" name="txtactualsaldo" id="txtactual"
 required="required" class="field" />
      
+</div>
 
- <input type="button" name="btnSend" id="enviar" value="Calcular" />
+     
+<a href="cuentas.html" ><input type="button" id="enviar" value="Salir" /></a>
+     
+ <input type="button" name="btnSend" id="enviar" value="Agregar" />
+     
+ 
+ 
  
  </form>
-    
-    <br><br>
-    
-     
-    </section>
-    </div>
     </body>
 </html>
